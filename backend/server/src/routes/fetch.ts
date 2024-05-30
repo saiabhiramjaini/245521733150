@@ -1,8 +1,9 @@
 import { Router } from 'express';
 import fetchController from '../controllers/fetch';
 const fetchRouter: Router = Router();
-const {getToken} = fetchController
+const {getProducts} = fetchController
 
-fetchRouter.get('/companies/:companyname/categories/:categoryname/products', getToken)
+fetchRouter.get('/companies/:companyname/categories/:categoryname/products', getProducts);
+
 
 export default fetchRouter;

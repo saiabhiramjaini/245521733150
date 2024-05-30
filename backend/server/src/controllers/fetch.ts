@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import axios from "axios";
 
-const getToken = async (req: Request, res: Response) => {
+const getProducts = async (req: Request, res: Response) => {
     try {
         const authResponse = await axios.post("http://20.244.56.144/test/auth", {
             companyName: "AffordMed",
@@ -34,4 +34,8 @@ const getToken = async (req: Request, res: Response) => {
     }
 };
 
-export default { getToken };
+const getProduct = async (req: Request, res: Response)=>{
+    
+}
+
+export default { getProducts };
